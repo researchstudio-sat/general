@@ -10,7 +10,7 @@ Thus, we have 4 main points where we'd like to use rdfruit:
 
 ## 1. Create Posting
 
-Generate arbitrary RDF, ideally using the perfect user friendly GUI.
+Generate arbitrary RDF, ideally using the perfect user-friendly GUI.
 
 Example: I want to get from my current location to point B
 
@@ -22,7 +22,7 @@ Example: Someone is nearby and would drive me to B if I'm quick enough to hop on
 
 ## 3. Author a message 
 
-Generate arbitrary RDF, ideally using the perfect user friendly GUI.
+Generate arbitrary RDF, ideally using the perfect user-friendly GUI.
 
 Example: confirm an appointment: in 3 minutes at location A
 
@@ -39,7 +39,7 @@ Example: Show that the other user has confirmed my suggestion for an appointment
 
 In WoN, you can post and find anything. The only thing you'll know about postings or messages a priori is that they are RDF datasets. They will have a few standard triples, but these don't normally interest users. Consequently, it is not feasible to prepare a UI library for authoring every conceivable WoN posting. Rather, we'd like a discovery system that finds the right UI component on the fly. For that to be possible, the components need to be adaptive in terms of visual style, language, context (whatever that is exactly - it is a thing). 
 
-Moreover, the components must not pose a security risk in any way, e.g. component lookup shouldn't send sensible data like the user's location, passwords, etc. Also we should look into ways to support managing permissions for components to prevent access to and sending of sensitive data without the user's permission.
+Moreover, the components must not pose a security risk in any way, e.g. component lookup shouldn't send sensible data like the user's location, passwords, etc. Also, we should look into ways to support managing permissions for components to prevent access to and sending of sensitive data without the user's permission.
 
 ### 2. Generic RDF authoring capabilities
 
@@ -51,4 +51,6 @@ Applications using the system should still have a coherent visual style and adhe
 
 ### 4. Mobile-First
 
-For the usual-reasons[^mobile internet usage constitute more than 50% of the overall usage and it's easier to move from a mobile design to a desktop version than the other way around] it should be possible to start on mobile plattforms. This means responsive components as well as being able to work with flaky and low-bandwidth connections (e.g. components can't be 1M each)
+For the usual-reasons<sup>[1](#user-content-fn1)</sup> it should be possible to start on mobile platforms. This means responsive components as well as being able to work with flaky and low-bandwidth connections (e.g. components can't be 1M each)
+
+<a id="fn1">[1]</a>: mobile internet usage constitute more than 50% of the overall usage and it's easier to move from a mobile design to a desktop version than the other way around
